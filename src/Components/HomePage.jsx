@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import Engineer from '../assets/engineer.png'
-import logo from '../assets/logo.png'
+import image from '../assets/image.png'
+import logo from '../assets/logo.webp'
 export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -74,7 +75,7 @@ export default function HomePage() {
         <motion.img
         src={Engineer}
           alt="Scientist holding glowing cubes"
-          className="w-2/3 md:w-1/3 max-w-sm mt-10 md:mt-0"
+          className="w-2/3  md:w-1/3 max-w-sm mt-10 md:mt-0"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
